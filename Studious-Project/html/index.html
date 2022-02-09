@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="../css/index.css" />
     <title>Studious</title>
   </head>
-  <body>
+  <body class="dark-theme">
     <!-- top header -->
     <div class="top-header">
       <div class="top-header__content">
@@ -146,8 +146,10 @@
           </div>
         </div>
         <div class="navbar__toggle__switch">
-          <div class="switch__container">
-            <i class="moon-icon"></i>
+          <div class="toggle-switch">
+            <button class="gg-moon" onclick="themeSwitch()">
+              <i class="fa fa-moon"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -1206,5 +1208,6 @@
         delay: 10,
       });
     </script>
+    <script src="../js/theme-switch.js"></script>
   </body>
 </html>

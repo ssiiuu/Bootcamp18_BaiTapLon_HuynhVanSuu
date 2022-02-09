@@ -14,6 +14,7 @@ html {
   line-height: 1.5;
   color: #212529;
   text-align: left;
+  background: var(--bg-color);
 }
 .container {
   width: 78%;
@@ -64,6 +65,23 @@ img {
   --bg-grey: #f7f7f7;
   --footer-bg: #000;
   --card-bg: #fff;
+}
+
+.dark-theme {
+  --primary-color: #ff6600;
+  --secondary-color: #ffc600;
+  --font-color: #c2d0da;
+  --bg-color: #232220;
+  --heading-color: #eee;
+  --border-color: rgba(255, 255, 255, 0.2);
+  --border-color-light: rgba(255, 255, 255, 0.1);
+  --nav-color: #fff;
+  --dropdown-color: #121725;
+  --iframe-filter: grayscale(100%);
+  --bg-light: #282828;
+  --bg-grey: #282828;
+  --card-bg: #888c96;
+  --footer-bg: #000;
 }
 /* header */
 header {
@@ -118,29 +136,15 @@ header {
   color: var(--font-color);
 }
 .toggle-switch {
-  width: 24px;
-  height: 24px;
   margin-right: 20px;
 }
+
 .toggle-switch .gg-moon {
-  overflow: hidden;
-  position: relative;
-  transform: rotate(-135deg) scale(var(--ggs, 1));
-  width: 20px;
-  height: 20px;
-  border: 2px solid;
-  border-radius: 50%;
-  border-bottom: 2px solid transparent;
-}
-.toggle-switch .gg-moon:after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 18px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 2px;
-  top: 8px;
-  left: 2px;
+  background-color: transparent;
+  border: none;
+  font-size: 26px;
+  color: white;
+  height: 100%;
 }
 .mobile-nav-button button {
   color: #fbfdfb;
@@ -247,6 +251,7 @@ header {
   font-size: 38px;
   line-height: 48px;
   font-weight: 600;
+  color: var(--heading-color);
 }
 
 .about__info p {
@@ -848,6 +853,9 @@ header {
 }
 .item__wrapper .customer-info {
   margin-top: 1.5rem;
+}
+.item__wrapper .customer-info h3 {
+  color: var(--heading-color);
 }
 .owl-nav {
   display: none;

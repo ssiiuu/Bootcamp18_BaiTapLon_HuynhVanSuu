@@ -113,6 +113,31 @@ h6 {
   --box-shadow-color: rgb(4 20 69 / 10%);
   --logo-color: #0d369f;
 }
+
+.dark-theme {
+  --theme-color: #e40000;
+  --primary-color: #4867b0;
+  --primary-light: #ffc945;
+  --secondary-color: #ff6e65;
+  --primary-dark: #00070c;
+  --font-color: #b7b7b7;
+  --bg-color: #161c2d;
+  --bg-color-2: transparent;
+  --heading-color: #fdfffc;
+  --footer-color: #0e0e0e;
+  --footer-cpy-color: #060606;
+  --border-color: rgba(255, 255, 255, 0.2);
+  --border-color-light: rgba(255, 255, 255, 0.2);
+  --iframe-filter: grayscale(100%);
+  --bg-grey: #060e1f;
+  --bg-light: #121725;
+  --bg-dark-color: #27282b;
+  --quote-text-color: #e6e6e6;
+  --paceholder-color-search: #eee;
+  --bg-color-li: rgb(168 176 195 / 11%);
+  --box-shadow-color: hsla(222, 34%, 17%, 1);
+  --logo-color: #fff;
+}
 .noscroll {
   overflow: hidden;
   height: 100vh;
@@ -255,42 +280,20 @@ header.nav-fixed .header__container {
 .navbar__search button.search-btn i {
   font-size: 15px;
 }
-.navbar__search button.search-btn:hover,
-.navbar__toggle__switch .moon-icon:hover {
+.navbar__search button.search-btn:hover {
   color: var(--secondary-color);
 }
-.navbar__toggle__switch .switch__container {
-  width: 24px;
-  height: 24px;
-  padding: 0px 0;
+.toggle-switch {
   margin-left: 10px;
   color: var(--primary-color);
 }
-.navbar__toggle__switch .moon-icon {
-  display: block;
-  overflow: hidden;
-  position: relative;
-  transform: rotate(-135deg) scale(var(--ggs, 1));
-  width: 20px;
-  height: 20px;
-  border: 2px solid;
-  border-bottom: 2px solid transparent;
-  border-radius: 50%;
-  color: var(--primary-color);
-  cursor: pointer;
-  transition: 0.5s;
-}
-.navbar__toggle__switch .moon-icon:after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 18px;
-  border: 2px solid transparent;
-  box-shadow: 0 0 0 2px;
-  top: 8px;
-  left: 2px;
-  border-radius: 50%;
-  display: block;
+.toggle-switch .gg-moon {
+  background-color: transparent;
+  border: none;
+  font-size: 26px;
+  color: var(--heading-color);
+  height: 100%;
+  outline: none;
 }
 .navbar-toggler {
   padding: 0;
